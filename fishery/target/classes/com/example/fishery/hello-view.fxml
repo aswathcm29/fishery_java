@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.PasswordField?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fishery.HelloController">
+   <center>
+      <AnchorPane prefHeight="597.0" prefWidth="916.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="usernameField" layoutX="374.0" layoutY="178.0" prefHeight="51.0" prefWidth="307.0" />
+            <PasswordField fx:id="passwordField" layoutX="374.0" layoutY="289.0" prefHeight="51.0" prefWidth="307.0" />
+            <Text layoutX="199.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" textAlignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Text layoutX="206.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" textAlignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Button fx:id="onHelloButtonClick" layoutX="348.0" layoutY="429.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="58.0" prefWidth="155.0" text="Login">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
