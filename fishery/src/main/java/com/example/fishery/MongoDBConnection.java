@@ -8,6 +8,7 @@ public class MongoDBConnection {
         try
         {
             MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
+            System.out.println("Database connected succesfully");
             return mongoClient;
 
         }

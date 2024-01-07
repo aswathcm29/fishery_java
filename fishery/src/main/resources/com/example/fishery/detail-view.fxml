@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fishery.DetailViewController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="fishTypeLabel" layoutX="34.0" layoutY="25.0" prefHeight="66.0" prefWidth="206.0" text="Gold Fish" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>++
+
+            </Label>
+            <AnchorPane layoutX="39.0" layoutY="104.0" prefHeight="13.0" prefWidth="671.0" style="-fx-background-color: #2ecc71;" />
+            <Label layoutX="89.0" layoutY="145.0" prefHeight="31.0" prefWidth="137.0" text="Distribution" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="193.0" prefHeight="31.0" prefWidth="182.0" text="Population Status" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="240.0" prefHeight="31.0" prefWidth="137.0" text="Quantity" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="292.0" prefHeight="31.0" prefWidth="137.0" text="Quality" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="342.0" prefHeight="31.0" prefWidth="137.0" text="Accessibility" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="399.0" prefHeight="31.0" prefWidth="137.0" text="Potential Uses" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="336.0" layoutY="145.0" prefHeight="31.0" prefWidth="6.0" text=":" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="334.0" layoutY="193.0" prefHeight="31.0" prefWidth="5.0" text=":" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="335.0" layoutY="240.0" prefHeight="31.0" prefWidth="15.0" text=":" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="334.0" layoutY="292.0" prefHeight="31.0" prefWidth="6.0" text=":" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="334.0" layoutY="342.0" prefHeight="31.0" prefWidth="6.0" text=":" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="334.0" layoutY="399.0" prefHeight="31.0" prefWidth="6.0" text=":" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="Distribution" layoutX="407.0" layoutY="145.0" prefHeight="31.0" prefWidth="206.0" text="Northern Hemisphere" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="PStatus" layoutX="407.0" layoutY="193.0" prefHeight="31.0" prefWidth="137.0" text="Stable" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="Quantity" layoutX="407.0" layoutY="240.0" prefHeight="31.0" prefWidth="137.0" text="5000.0" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="Quality" layoutX="407.0" layoutY="292.0" prefHeight="31.0" prefWidth="137.0" text="High" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="Accessibility" layoutX="407.0" layoutY="342.0" prefHeight="31.0" prefWidth="137.0" text="Moderate" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="PUses" layoutX="407.0" layoutY="399.0" prefHeight="31.0" prefWidth="324.0" text="Consumption, Commercial Fishing" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="584.0" layoutY="39.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="112.0" style="white: #2ecc71; -fx-background-radius: 8;" text="ESC" onAction="#backbtn">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

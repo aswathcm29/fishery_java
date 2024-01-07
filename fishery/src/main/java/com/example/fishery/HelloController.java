@@ -11,23 +11,16 @@ import javafx.stage.Stage;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-
 import java.io.IOException;
-
 public class HelloController {
-
     @FXML
     private TextField usernameField;
-
     @FXML
     private PasswordField passwordField;
-
     private Stage Primarystage; // Declare a field to store the primary stage
-
     public void setPrimaryStage(Stage primaryStage) {
         this.Primarystage= primaryStage;
     }
-
     @FXML
     protected void onHelloButtonClick() {
         try {
@@ -53,20 +46,17 @@ public class HelloController {
             e.printStackTrace();
         }
     }
-
     public void setPrimarystage(Stage stage){
         this.Primarystage=stage;
     }
 
     public String toHome() throws IOException {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("home-view.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(),1500,1500);
+            Scene scene = new Scene(fxmlLoader.load());
             HomeController loginController = fxmlLoader.getController();
             loginController.setPrimarystage(this.Primarystage);
             Primarystage.setTitle("Home coming!");
             Primarystage.setScene(scene);
-
         return null;
     }
-
 }

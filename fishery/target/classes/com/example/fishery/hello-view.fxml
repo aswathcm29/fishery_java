@@ -1,34 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<?import javafx.scene.control.PasswordField?>
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fishery.HelloController">
    <center>
-      <AnchorPane prefHeight="597.0" prefWidth="916.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="597.0" prefWidth="916.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="usernameField" layoutX="374.0" layoutY="178.0" prefHeight="51.0" prefWidth="307.0" />
-            <PasswordField fx:id="passwordField" layoutX="374.0" layoutY="289.0" prefHeight="51.0" prefWidth="307.0" />
-            <Text layoutX="199.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" textAlignment="CENTER">
+            <TextField fx:id="usernameField" layoutX="494.0" layoutY="178.0" prefHeight="46.0" prefWidth="292.0" promptText="Enter Username">
                <font>
-                  <Font size="27.0" />
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <PasswordField fx:id="passwordField" layoutX="493.0" layoutY="278.0" prefHeight="46.0" prefWidth="293.0" promptText="Enter Password">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></PasswordField>
+            <Text fill="WHITE" layoutX="310.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="26.0" />
                </font>
             </Text>
-            <Text layoutX="206.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" textAlignment="CENTER">
+            <Text fill="WHITE" layoutX="318.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" textAlignment="CENTER">
                <font>
-                  <Font size="27.0" />
+                  <Font name="System Bold" size="26.0" />
                </font>
             </Text>
-            <Button fx:id="onHelloButtonClick" layoutX="348.0" layoutY="429.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="58.0" prefWidth="155.0" text="Login">
+            <Button fx:id="onHelloButtonClick" layoutX="485.0" layoutY="421.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="58.0" prefWidth="155.0" text="Login">
                <font>
-                  <Font size="20.0" />
+                  <Font name="System Bold" size="20.0" />
                </font>
             </Button>
+            <AnchorPane layoutY="-1.0" prefHeight="584.0" prefWidth="258.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 10;">
+               <children>
+                  <Text layoutX="66.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FinSync" wrappingWidth="125.34945678710938">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="95.0" layoutY="117.0" prefHeight="10.0" prefWidth="62.0" style="-fx-background-color: black;" />
+                  <Text layoutX="29.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Smart Solutions for Aquatic Resources" textAlignment="CENTER" wrappingWidth="193.34942626953125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="33.0" layoutY="447.0" prefHeight="2.0" prefWidth="188.0" style="-fx-background-color: black;" />
+                  <AnchorPane layoutX="32.0" layoutY="550.0" prefHeight="3.0" prefWidth="188.0" style="-fx-background-color: black;" />
+               </children></AnchorPane>
+            <Label layoutX="533.0" layoutY="56.0" prefHeight="35.0" prefWidth="66.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="529.0" layoutY="103.0" prefHeight="10.0" prefWidth="75.0" style="-fx-background-color: #2ecc71;" />
          </children>
       </AnchorPane>
    </center>
