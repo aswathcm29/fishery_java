@@ -130,12 +130,21 @@ public class HomeController {
             throw e;  // Rethrow the exception to indicate that the loading failed
         }
     }
-    public void addNew() {
-        String newFishType = addText.getText();
-        addText.clear();
-        buttonTexts.add(newFishType);
-        buttonTexts.clear();
-        addNewFishTypeToDatabase(newFishType);
+    public void addNew() throws IOException {
+//        String newFishType = addText.getText();
+//        addText.clear();
+//        buttonTexts.add(newFishType);
+//        buttonTexts.clear();
+//        addNewFishTypeToDatabase(newFishType);
+
+        //Kishore Change
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("AddPage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+//        HomeController loginController = fxmlLoader.getController();
+//        loginController.setPrimarystage(this.Primarystage);
+        Primarystage.setTitle("Home coming!");
+        Primarystage.setScene(scene);
+        Primarystage.show();
 
     }
 
